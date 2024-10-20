@@ -1,0 +1,184 @@
+/* universal styles */
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 1em 5em;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Source Code Pro", monospace;
+  background-color: whitesmoke;
+}
+/* navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0em;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  z-index: 10;
+  background-color: whitesmoke;
+}
+/* logo */
+.logo {
+  background-color: deepskyblue;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  transition: background-color 0.5s;
+}
+.logo:hover {
+  box-shadow: -2px -2px 5px white, 2px 2px 5px black;
+  transition: background-color 1s;
+  background-color: lightcoral;
+}
+/* nav links */
+ul {
+  list-style: none;
+}
+li {
+  display: inline;
+  padding: 1em 2em;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: deepskyblue;
+  text-shadow: 1px 1px 1px black, -1px -1px 1px white;
+}
+a:active {
+  color: black;
+}
+#colors,
+#fonts,
+#text-styles {
+  scroll-margin-top: 5em;
+}
+/* main */
+main {
+  position: relative;
+  top: 5em;
+}
+h1 {
+  font-weight: 600;
+  margin: 1.5em 0;
+}
+h2 {
+  font-weight: 500;
+  margin-bottom: 1.5em;
+}
+
+section {
+  border: 1px solid black;
+  padding: 2em 0.5em;
+  margin: 0.5em 0;
+}
+/* colors */
+
+.color-patch-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 5em;
+  padding: 2em;
+}
+.color-patch {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 20em;
+  height: 10em;
+  padding: 2em;
+  box-shadow: 2px 2px 10px black;
+}
+.color-patch p {
+  text-align: center;
+}
+.deepskyblue {
+  background-color: deepskyblue;
+}
+.darkcyan {
+  background-color: darkcyan;
+}
+.lightcoral {
+  background-color: lightcoral;
+}
+.whitesmoke {
+  background-color: whitesmoke;
+}
+.white {
+  color: white;
+}
+.black {
+  color: black;
+}
+/* font */
+.font-patch-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2em 10em;
+  flex-wrap: wrap;
+}
+.font-patch {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 15em;
+  padding: 2em;
+}
+.source-code-pro {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 400;
+}
+.charm {
+  font-family: "Charm", cursive;
+  font-weight: 400;
+}
+.cormorant-garamond {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+/* text style */
+.text-style-patch-container {
+  padding: 0 2em;
+}
+.text-style-patch {
+  padding-bottom: 2em;
+}
+.text-style-patch ul {
+  list-style: circle;
+  padding-left: 2em;
+}
+.text-style-patch li {
+  display: list-item;
+}
+.text-style-patch h1,
+.text-style-patch h2 {
+  margin: 0;
+}
+li span {
+  position: relative;
+  left: -2em;
+}
+/* footer */
